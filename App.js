@@ -9,11 +9,13 @@ import Home_Activity from './screens/Home_Activity';
 import Settings_Activity from './screens/Settings_Activity';
 import Details_Activity from './screens/Details_Activity';
 import Profile_Activity from './screens/Profile_Activity';
+import Booking_Activity from './screens/Booking_Activity';
 
 const HomeTab = createStackNavigator(
   {
     Home: Home_Activity ,
     Details: Details_Activity ,
+    Booking: Booking_Activity,
   },
   {
     defaultNavigationOptions: {
@@ -45,10 +47,28 @@ const SettingsTab = createStackNavigator(
   }
 );
 
+const BookingTab = createStackNavigator(
+  {
+    Booking: Booking_Activity,
+    Home: Home_Activity ,
+  },
+  {
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#0091EA',
+      },
+      headerTintColor: '#fff',
+      title: 'Home Tab',
+     
+    },
+  }
+);
+
 const MainApp = createBottomTabNavigator(
   {
     Home: HomeTab ,
     Settings: SettingsTab ,
+    Booking: BookingTab ,
   },
   {
     defaultNavigationOptions: ({ navigation }) => ({
@@ -60,7 +80,13 @@ const MainApp = createBottomTabNavigator(
               source={ require('./assets/home.png') }
               style={{ width: 20, height: 20, }} />
           );
-        } else {
+        } else if (routeName === 'Settings') {
+          return (
+            <Image
+              source={ require('./assets/settings.png') }
+              style={{ width: 20, height: 20 }} />
+          );
+        } else  {
           return (
             <Image
               source={ require('./assets/settings.png') }
@@ -75,5 +101,6 @@ const MainApp = createBottomTabNavigator(
     },
   }
 );
+
 
 export default createAppContainer(MainApp);
