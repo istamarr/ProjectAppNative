@@ -25,6 +25,6 @@ INSTALL ALL OF THEM, (SKIPPED HOW TO)
 
 # How To Code this React Native Apps:
 
-Install react native, install depedencies, then read all of my code !!!!
+Install react native, install depedencies, then read all of my codes !!!!
 
 Thanks !!!
