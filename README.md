@@ -21,7 +21,7 @@ Andorid SDK from Android Std
 Adb (you can use your smartphone)
 Emulator
 
-INSTALL ALL OF THEM, (SKIPPED NOTE)
+INSTALL ALL OF THEM, (SKIPPED HOW TO)
 
 # How To Code this React Native Apps:
 
