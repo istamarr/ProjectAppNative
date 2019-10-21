@@ -21,10 +21,10 @@ Andorid SDK from Android Std
 Adb (you can use your smartphone)
 Emulator
 
-INSTALL ALL OF THEM, (SKIPPED HOW TO)
+INSTALL ALL OF THEM, (way has been understood)
 
-#### How To Code this React Native Apps:
+#### Code this React Native Apps:
 
-Install react native, install depedencies, then read all of my codes !!!!
+Install react native, install depedencies, then I am coding !!!!
 
 Thanks !!!
